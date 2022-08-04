@@ -1,0 +1,28 @@
+public class Start {
+    public static void main(String[] args) {
+        Fruit apple = new Fruit();
+        apple.name = "Apple";
+        apple.price = 5;
+
+        Fruit orange = new Fruit();
+        orange.name = "Orange";
+        orange.price = 3;
+
+        Fruit fruits[] = new Fruit[] {apple, orange};
+
+        for (int i = 0; i< fruits.length; i++) {
+            Fruit fruit = fruits[i];
+            System.out.println("The " + fruit.name + " costs " + fruit.price);
+        }
+
+
+
+    }
+}
+
+
+
+public class Fruit {
+    public String name;
+    public double price;
+}
